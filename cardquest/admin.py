@@ -1,17 +1,18 @@
 from django.contrib import admin
-from .models import Trainer, PokemonCard, Collection
+from . import models
 
-@admin.register(Trainer)
+
+@admin.register(models.Trainer)
 class TrainerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'birthdate', 'location', 'email')
-    search_fields = ('name', 'location')
+    list_display = ("name", "birthdate", "location", "email", "created_at", "updated_at")
+    search_fields = ("name", "location",)
 
-@admin.register(PokemonCard)
-class PokemonAdmin(admin.ModelAdmin):
-    list_display = ('name', 'rarity')
-    search_fields = ('name',)
+@admin.register(models.PokemonCard)
+class PokemonCardAdmin(admin.ModelAdmin):
+    list_display = ("name", "rarity", "hp", "card_type", "attack", "description", "weakness", "card_number", "release_date", "evolution_stage", "abilities", "created_at", "updated_at")
+    search_fields = ("name",)
 
-@admin.register(Collection)
+@admin.register(models.Collection)
 class CollectionAdmin(admin.ModelAdmin):
-    list_display = ('trainer', 'card', 'collection_date')
-    search_fields = ('trainer__name', 'card__name')
+    list_display = ("card", "trainer", "collection_date", "created_at", "updated_at")
+    search_fields = ("card", "trainer")
