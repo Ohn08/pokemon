@@ -89,8 +89,8 @@ class Command(BaseCommand):
         trainer6 = Trainer(name="Steven",birthdate= "1974-11-02",location= "Ever Grande City",email= "stevenstone@pokemon.com")
         trainer7 = Trainer(name="Roxanne",birthdate= "2005-07-02" ,location= "Rustboro City" ,email= "roxanne@pokemon.com" )
         trainer8 = Trainer(name="Aaron" ,birthdate= "2002-10-06" ,location= "Sinoh Region" ,email= "aaronelitefor@pokemon.com")
-        trainer9 = Trainer(name="Fernando",birthdate= "2003-11-03",location= "San Pedro",email= "andFerno@pokemon.com")
-        trainer10 = Trainer(name="Crishel" ,birthdate= "2003-11-21" ,location= "San Jose" ,email= "crishel@pokemon.com")
+        trainer9 = Trainer(name="Max",birthdate= "2004-11-03",location= "Salvacion",email= "max@pokemon.com")
+        trainer10 = Trainer(name="John" ,birthdate= "2001-10-25" ,location= "San Jose" ,email= "john@pokemon.com")
 
         trainers = [trainer1, trainer2, trainer3, trainer4, trainer5, trainer6, trainer7, trainer8, trainer9, trainer10] 
         

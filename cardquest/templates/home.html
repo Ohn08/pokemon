@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-    <title>Pokemon | Home</title>
+    <title>{% block title %} CardQuest Master {% endblock %}</title>
   </head>
   <body>
     <!--NAVBAR-->
@@ -23,7 +23,8 @@
 
     <!--CONTENT-->
     <main>
-      <section class="home-content"></section>
+      {% block content %}
+      {% endblock %}
     </main>
       
     
